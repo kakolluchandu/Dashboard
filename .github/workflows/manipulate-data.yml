@@ -1,0 +1,32 @@
+name: Manipulate Data
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Schedule to run every day at midnight UTC
+
+jobs:
+  manipulate_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Manipulate data
+        run: node manipulate-data.js
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add db.json
+          git commit -m "Manipulated data [skip ci]"
+          git push
