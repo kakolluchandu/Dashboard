@@ -1,0 +1,30 @@
+[
+    {
+        "userName": "@kanakala2003",
+        "followers": 28540,
+        "todayFollowers": 12,
+        "icon": "images/facebook.png",
+        "name": "facebook"
+    },
+    {
+        "userName": "@kanakala2003",
+        "followers": 28540,
+        "todayFollowers": 20,
+        "icon": "images/twitter.png",
+        "name": "twitter"
+    },
+    {
+        "userName": "@kanakala2003",
+        "followers": 4550,
+        "todayFollowers": 30,
+        "icon": "images/instagram24.png",
+        "name": "instagram"
+    },
+    {
+        "userName": "@kanakala2003",
+        "followers": 4140,
+        "todayFollowers": -50,
+        "icon": "images/youtube.png",
+        "name": "youtube"
+    }
+]
